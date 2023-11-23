@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(to right, #ff83ee, #ffd454) no-repeat;
+        width: 100%;
+        overflow: hidden auto;
+        color: #fff;
+      }
+
+      ul {
+        overflow: auto;
+        white-space: nowrap;
+        width: 100%;
+        padding: 16px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        background: #fff;
+        color: #000;
+      }
+
+      li {
+        list-style-type: none;
+      }
+      main {
+        overflow: hidden auto;
+      }
+      .home-screen {
+        width: 100vw;
+        max-height: 100vh;
+        object-fit: cover;
+      }
+      article {
+        display: grid;
+        gap: 16px;
+        position: absolute;
+        background: #ff000055;
+        width: 30vw;
+        padding: 32px;
+        top: 60%;
+        left: 5%;
+      }
+      .section-2 {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 48px;
+        padding: 48px;
+        place-content: center;
+        place-items: center;
+        text-align: center;
+      }
+      .section-2 > section {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        gap: 32px;
+        padding: 32px;
+      }
+      .section-2 div {
+        display: grid;
+        grid-template-rows: auto auto 1fr;
+        gap: 32px;
+        padding: 60px;
+        background: #fff;
+        color: #000;
+        border-radius: 0px 60px;
+      }
+      .section-2 img {
+        width: 100%;
+        height: 300px;
+        border-radius: 0 60px 0 0;
+      }
+      h2 {
+        padding: 16px 60px;
+        border-radius: 24px;
+        color: black;
+        background: #ffffff55;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Order</li>
+        <li>Food</li>
+        <li>Restaurant</li>
+        <li>Testimonials</li>
+        <li>Contact Us</li>
+        <li><span>call</span><span>cart</span></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="section-1">
+        <img class="home-screen" src="images/img1.jpg" alt="home" />
+        <article>
+          <h1>Lorem ipsum</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel amet
+            nam magni quam, saepe possimus debitis beatae quod, placeat vero
+            sequi facere, ratione architecto maxime quas autem deleniti pariatur
+            ad?
+          </p>
+        </article>
+      </section>
+      <section class="section-2">
+        <h1>Order Now</h1>
+        <section>
+          <div>
+            <img src="./images/img2.jpg" />
+            <h1>BURGER</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum hic commodi.
+            </p>
+          </div>
+          <div>
+            <img src="./images/img3.jpg" />
+            <h1>PIZZA</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum hic commodi.
+            </p>
+          </div>
+          <div>
+            <img src="./images/img4.jpg" />
+            <h1>PASTA</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum hic commodi.
+            </p>
+          </div>
+        </section>
+        <h2>Order</h2>
+      </section>
+    </main>
+  </body>
+</html>
